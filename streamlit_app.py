@@ -44,7 +44,7 @@ try:
 # take the json version of the response and normalize it
 # output it the screen as a table
 # don't run anything past here while we troubleshoot
-streamlit.stop()
+#streamlit.stop()
 
 #import snowflake.connector
 
