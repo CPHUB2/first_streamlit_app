@@ -43,13 +43,12 @@ except URLError as e:
 # output it the screen as a table
 # don't run anything past here while we troubleshoot
 
-#import snowflake.connector
-#Snowflake-related functions
-##streamlit.header("The fruit load list contains:")
-##def get_fruit_load_list():
-##    with my_cnx.cursor() as my_cur:
-##    my_cur.execute("select * from fruit_load_list")
-##    return my_cur.fetchall()
+##Snowflake-related functions
+streamlit.header("The fruit load list contains:")
+def get_fruit_load_list():
+    with my_cnx.cursor() as my_cur:
+    my_cur.execute("select * from fruit_load_list")
+    return my_cur.fetchall()
 
 #Add a button to load the fruit
 if streamlit.button('Get Fruit Load List'):
